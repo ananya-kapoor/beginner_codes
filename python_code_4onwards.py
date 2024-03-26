@@ -32,5 +32,16 @@ nums=[1,2,4,-3,5,6,7,8,0,0,0]
 result = find_triplets(nums)
 print(result)
 
-     
- 
+# Pragramme to ask user a long text ,convert into string , then to a list and then print all their words and their frequencies 
+# asking user to enter the text 
+text = input("Enter a long text: ")
+#Spliting the text into words 
+string_words= text
+words_list = string_words.split()
+# store the words and their frequencies
+words_freq = [words_list.count(n) for n in words_list]
+
+print("String :\n {} \n".format(string_words))
+print("list :\n {} \n".format(str(words_list)))
+print( "Pairs ( words and frequencies :\n {}". format (str(list (zip (words_list ,words_freq)))))
+
